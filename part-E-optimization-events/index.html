@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart Performance & Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>QuickCart</h1>
+        <p>Performance Optimization & DOM Events</p>
+    </header>
+
+    <main>
+        <!-- Debouncing -->
+        <section class="card">
+            <h2>1. Product Search - Debouncing</h2>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a product..."
+            >
+            <p id="searchResult">Start typing to search.</p>
+        </section>
+
+        <!-- Memoization -->
+        <section class="card">
+            <h2>2. Discount Calculator - Memoization</h2>
+
+            <input type="number" id="priceInput" placeholder="Enter price">
+            <input type="number" id="discountInput" placeholder="Discount percentage">
+
+            <button id="calculateButton">Calculate Discount</button>
+
+            <p id="discountResult"></p>
+        </section>
+
+        <!-- Event Bubbling and Delegation -->
+        <section class="card">
+            <h2>3. Product List - Event Delegation</h2>
+            <p>Click a product or remove a product using the button.</p>
+
+            <div id="productList">
+                <div class="product-item">
+                    <span>Laptop</span>
+                    <button class="remove-button">Remove</button>
+                </div>
+
+                <div class="product-item">
+                    <span>Mouse</span>
+                    <button class="remove-button">Remove</button>
+                </div>
+
+                <div class="product-item">
+                    <span>Keyboard</span>
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll demonstration -->
+        <section class="card scroll-section">
+            <h2>4. Scroll Throttling</h2>
+            <p>Scroll the page to see throttled events in the browser console.</p>
+            <div class="scroll-content">
+                Scroll down to test throttling.
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

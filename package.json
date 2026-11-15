@@ -1,0 +1,10 @@
+{
+  "name": "quickcart-advanced-javascript",
+  "version": "1.0.0",
+  "description": "Advanced JavaScript practical assignment based on a QuickCart e-commerce system",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "type": "module"
+}
